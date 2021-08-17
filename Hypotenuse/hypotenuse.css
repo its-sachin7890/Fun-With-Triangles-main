@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.triangle{
+    height: 73vh;
+}
+
+@media screen and (max-width: 360px) {
+
+    .triangle{
+        height: 75vh;
+    }
+
+}

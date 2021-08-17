@@ -1,0 +1,43 @@
+
+.calculate_area{
+    min-height: 75vh;
+    margin-top: 40px;
+    
+}
+
+.area_para{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.triangle_options{
+    display: block;
+    margin: auto;
+    padding: 25px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    height: 6rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.show_error{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}
+
+@media screen and (min-width: 360px) {
+    .triangle_options{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .triangle_options{
+        width: 50%;
+    }
+}

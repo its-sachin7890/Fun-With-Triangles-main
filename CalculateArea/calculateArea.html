@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area</title>
+    <link href="../style.css" rel="stylesheet">
+    <link href="./calculateArea.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculate_area">
+        <div class="area">
+            <a href="../index.html" class="go_back_link">Go Back</a>
+    
+            <h2>Calculate Area</h2>
+    
+            <div class="area_triangle">
+                <p class="area_para">Select an option below as per the data you have for a triangle</p>
+
+                <div class="to_calculate_area">
+                    <div id="base_height" class="area_div">
+                        <p class="triangle_options">If you have base and height length</p>
+                    </div>
+        
+                    <div id="length_3">
+                        <p class="triangle_options">If you have length of 3 sides</p>
+                    </div>
+        
+                    <div id="length_2_and_angle">
+                        <p class="triangle_options">If you have length of 2 sides and included angle</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+        <div id="base_and_height" style="display: none">
+            <form id="base_and_height_output_form">
+                <label for="base" style="font-weight: bold">Base =</label>
+                <input type="number" id="base" name="base" class="angle_input_link" required />
+                <label for="height" style="font-weight: bold">Height =</label>
+                <input type="number" id="height" name="height" class="angle_input_link" required />
+                <button type="submit" class="submit_btn" id="submit_btn1">Calculate</button>
+            </form>
+    
+            <!-- Error -->
+            <p class="error show_error"></p>
+
+            <!-- Output -->
+            <p class="area_para">Area will be calculated here : </p>
+            <p class="output" id="output1">Area = 1/2*base*height</p>
+        </div>
+    
+        <div id="length_of_3_sides" style="display: none">
+            <form id="length_of_3_sides_form">
+                <label for="input_1">a =</label>
+                <input type="number" id="input_1" class="angle_input_link" required>
+                <label for="input_2">b =</label>
+                <input type="number" id="input_2" class="angle_input_link" required><br>
+                <label for="input_3" class="input_3c">c =</label>
+                <input type="number" id="input_3" class="angle_input_link" required>
+    
+                <button type="submit" class="submit_btn" id="submit_btn2">Calculate</button>
+            </form>
+    
+            <!-- Error -->
+            <p class="display_error show_error"></p>
+
+            <!-- Output -->
+            <p class="area_para">Area will be calculated here : </p>
+            <p class="output" id="output2">Area = √s(s-a)(s-b)(s-c)</p>
+        </div>
+    
+        <div id="two_sides_and_angle" style="display: none">
+            <form id="two_sides_and_angle_form">
+    
+                <label for="input_a">a = </label>
+                <input type="number" id="input_a" class="angle_input_link" required>
+    
+                <label for="input_b">b = </label>
+                <input type="number" id="input_b" class="angle_input_link" required><br>
+    
+                <label for="input_c">∠A (deg) = </label>
+                <input type="number" id="input_c" class="angle_input_link" minlength = "0.0001" step="0.00001" maxlength= "360" required> 
+    
+                <button type="submit" class="submit_btn" id="submit_btn3">Calculate</button>
+            </form>
+    
+            <!-- Error -->
+            <p class="error_3 show_error"></p>
+            <p class="area_para">Area will be calculated here : </p>
+            <p class="output" id="output3">Area = 1/2*a*b*sin(A)</p>
+        </div>
+    
+    </div>
+    
+
+    <footer class="footer_link">
+        <h2 class="footer_link_heading">Connect with me!!!</h2>
+        <ul class="footer_link_list">
+            <li><a href="https://github.com/Akanksha108"><img src="../images/github.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.linkedin.com/in/akanksha-kawade-434473167"><img src="../images/linkedIn.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.instagram.com/kawade_akanksha17/"><img src="../images/insta.png" class="footer_img" /></a></li>
+
+            <li><a href="https://twitter.com/Akanksha_K_17"><img src="../images/twitter.png" class="footer_img" /></a></li>
+        </ul>
+    </footer>
+
+    <script src="calculateArea.js"></script>
+
+</body>
+</html>

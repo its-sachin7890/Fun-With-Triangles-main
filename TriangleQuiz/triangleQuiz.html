@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quiz</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./triangleQuiz.css">
+</head>
+<body>
+    <div class="triangle_quiz">
+         <div id="triangle_quiz_form">
+            <a href="../index.html" class="go_back_link">Go Back</a>
+            <div class="questions_list">
+                <div class="questions">
+                    <p class="triangle_quiz_questions">1.The kind of triangle which has two equal sides is called isosceles triangle</p><br>
+                    <input type="radio" name="que1" id="que_yes1" value="yes">
+                    <label for="que_yes1" class="questions_label">Yes</label>
+                    <input type="radio" name="que1" id="que_no1" value="no">
+                    <label for="que_no1" class="questions_label">No</label><br>
+                </div>
+                    
+                <div class="questions">
+                    <p class="triangle_quiz_questions">2. All 3 interior angles of a triangle add up to 90<sup>0</sup></p><br>
+                    <input type="radio" name="que2" id="que_yes2" value="yes">
+                    <label for="que_yes2" class="questions_label">Yes</label>
+                    <input type="radio" name="que2" id="que_no2" value="no">
+                    <label for="que_no2" class="questions_label">No</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">3. If a triangle has angles 135<sup>o</sup>, 15<sup>o</sup>, 30<sup>o</sup>. Is it an obtuse triangle?</p><br>
+                    <input type="radio" name="que3" id="que_yes3" value="yes">
+                    <label for="que_yes3" class="questions_label">Yes</label>
+                    <input type="radio" name="que3" id="que_no3" value="no">
+                    <label for="que_no3" class="questions_label">No</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">4. A triangle has angles 60<sup>o</sup>, 60<sup>o</sup>, 60<sup>o</sup>. Is it an equilateral triangle?</p><br>
+                    <input type="radio" name="que4" id="que_yes4" value="yes">
+                    <label for="que_yes4" class="questions_label">Yes</label>
+                    <input type="radio" name="que4" id="que_no4" value="no">
+                    <label for="que_no4" class="questions_label">No</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">5. If a triangle has 2 sides with equal lengths and 75<sup>o</sup> angle between them. What is the type of triangle?</p><br>
+                    <input type="radio" name="que5" id="que_equi5" value="equilateral">
+                    <label for="que_equi5" class="questions_label">Equilateral</label>
+                    <input type="radio" name="que5" id="que_isos5" value="isosceles">
+                    <label for="que_isos5" class="questions_label">Isosceles</label>
+                    <input type="radio" name="que5" id="que_both5" value="both">
+                    <label for="que_both5" class="questions_label">Both</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">6. If a triangle has angles 115<sup>o</sup>, 25<sup>o</sup>, 40<sup>o</sup>. Is it an acute triangle?</p><br>
+                    <input type="radio" name="que6" id="que_yes6" value="yes">
+                    <label for="que_yes6" class="questions_label">Yes</label>
+                    <input type="radio" name="que6" id="que_no6" value="no">
+                    <label for="que_no6" class="questions_label">No</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">7. A triangle where all sides are congruent is called Scalene Triangle</p><br>
+                    <input type="radio" name="que7" id="que_yes7" value="yes">
+                    <label for="que_yes7" class="questions_label">Yes</label>
+                    <input type="radio" name="que7" id="que_no7" value="no">
+                    <label for="que_no7" class="questions_label">No</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">8. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p><br>
+                    <input type="radio" name="que8" id="que_15cm" value="15">
+                    <label for="que_15cm" class="questions_label">15cm</label>
+                    <input type="radio" name="que8" id="que_45cm" value="45">
+                    <label for="que_45cm" class="questions_label">45cm</label>
+                    <input type="radio" name="que8" id="que_5cm" value="5">
+                    <label for="que_5cm" class="questions_label">5cm</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">9.  If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p><br>
+                    <input type="radio" name="que9" id="que_equi9" value="equilateral">
+                    <label for="que_equi9" class="questions_label">Equilateral</label>
+                    <input type="radio" name="que9" id="que_isos9" value="isosceles">
+                    <label for="que_isos9" class="questions_label">Isosceles</label>
+                    <input type="radio" name="que9" id="que_scalene9" value="scalene_angle">
+                    <label for="que_scalene9" class="questions_label">Scalene</label><br>
+                </div>
+
+                <div class="questions">
+                    <p class="triangle_quiz_questions">10. If a triangle has 2 angles of 75<sup>o</sup>. What is the measure of third angle in degree?</p><br>
+                    <input type="radio" name="que10" id="que_25cm" value="25">
+                    <label for="que_25cm" class="questions_label">25</label>
+                    <input type="radio" name="que10" id="que_30cm" value="30">
+                    <label for="que_30cm" class="questions_label">30</label>
+                    <input type="radio" name="que10" id="que_20cm" value="20">
+                    <label for="que_20cm" class="questions_label">20</label><br>
+                </div>
+
+                <button type="submit" class="submit_btn">Submit</button>
+            </div>
+
+            <p class="quiz_para">Your score will be shown here: </p>
+            <p class="output quiz">Score: For each correct answer you will get one point</p>
+        </div>
+    </div>
+
+
+    <footer class="footer_link">
+        <h2 class="footer_link_heading">Connect with me!!!</h2>
+        <ul class="footer_link_list">
+            <li><a href="https://github.com/Akanksha108"><img src="../images/github.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.linkedin.com/in/akanksha-kawade-434473167"><img src="../images/linkedIn.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.instagram.com/kawade_akanksha17/"><img src="../images/insta.png" class="footer_img" /></a></li>
+
+            <li><a href="https://twitter.com/Akanksha_K_17"><img src="../images/twitter.png" class="footer_img" /></a></li>
+        </ul>
+    </footer>
+
+    <script src="triangleQuiz.js"></script>
+</body>
+</html>
